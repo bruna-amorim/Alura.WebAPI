@@ -15,3 +15,4 @@ namespace Alura.ListaLeitura.WebApp
                 .UseStartup<Startup>();
     }
 }
+ 
