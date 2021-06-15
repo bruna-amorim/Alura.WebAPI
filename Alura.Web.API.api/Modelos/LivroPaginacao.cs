@@ -10,6 +10,7 @@ namespace Alura.WebAPI.Api.Modelos
 	{
 		public static LivroPaginado ToLivroPaginado(this IQueryable<LivroApi> query, LivroPaginacao paginacao)
 		{
+			// itens
 			int totalItens = query.Count();
 			int totalPaginas = (int)Math.Ceiling(totalItens / (double)paginacao.Tamanho);
 			return new LivroPaginado
